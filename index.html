@@ -36,6 +36,7 @@
     
     <section>
         <h2>Interpolación Lineal</h2>
+        <p>La interpolación lineal es un método numérico que se utiliza para estimar el valor de una función entre dos puntos conocidos. Supone que el cambio entre esos puntos es lineal, es decir, que se puede trazar una línea recta entre ellos. Es una técnica sencilla y útil cuando se tienen pocos datos y se necesita aproximar un valor intermedio.</p>
         <pre><code>
 import matplotlib.pyplot as plt
 import numpy as np
@@ -64,6 +65,7 @@ plt.show()</code></pre>
     
     <section>
         <h2>Interpolación Cuadrática</h2>
+        <p>La interpolación cuadrática es un método que utiliza un polinomio de segundo grado (una parábola) para aproximar una función a partir de tres puntos conocidos. A diferencia de la interpolación lineal, este método permite capturar la curvatura de los datos, ofreciendo una mejor precisión cuando la relación entre los valores no es lineal.</p>
         <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 
@@ -102,6 +104,8 @@ plt.show()</code></pre>
     
     <section>
         <h2>Método de la Secante</h2>
+        <p>El método de la secante es una técnica numérica para encontrar raíces de una función. Es similar al método de Newton-Raphson, pero no requiere calcular la derivada de la función. En su lugar, utiliza una aproximación basada en dos puntos iniciales y traza una secante (una línea recta que cruza la curva) para estimar la raíz.
+</p>
         <pre><code>import numpy as np
 import matplotlib.pyplot as plt
 
@@ -134,6 +138,7 @@ plt.show()</code></pre>
     
     <section>
         <h2>Método de la Falsa Posición</h2>
+        <p>El método de la falsa posición es una técnica numérica para encontrar una raíz de una función continua. Se basa en el mismo principio que el método de bisección: la raíz se encuentra entre dos valores a y b tales que f(a) \cdot f(b) < 0. Sin embargo, en lugar de usar el punto medio, la falsa posición calcula el punto de intersección de la recta secante entre a y b con el eje x, lo que suele llevar a una convergencia más rápida.</p>
         <pre><code>import numpy as np
 import matplotlib.pyplot as plt
 
@@ -176,6 +181,7 @@ plt.show()</code></pre>
     
     <section>
         <h2>Regresión Lineal</h2>
+        <p>La regresión lineal es un método estadístico que se utiliza para modelar la relación entre una variable independiente x y una variable dependiente y mediante una línea recta. Su objetivo es encontrar la recta que mejor se ajusta a un conjunto de datos, minimizando la suma de los errores (diferencias) entre los valores reales y los valores predichos.</p>
         <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -228,6 +234,7 @@ plt.show()
     
     <section>
         <h2>Método de Newton-Raphson</h2>
+        <p>El método de Newton-Raphson es una técnica numérica muy eficiente para encontrar raíces de funciones reales. Utiliza derivadas para aproximar la raíz de una función, partiendo de un valor inicial cercano a la solución y refinándolo iterativamente.</p>
         <pre><code>import numpy as np
 import matplotlib.pyplot as plt
 
@@ -289,6 +296,7 @@ plt.show()
     
     <section>
         <h2>Método de Bisección</h2>
+        <p>El método de bisección es una técnica numérica simple y confiable para encontrar raíces de funciones continuas. Parte de un intervalo [a, b] donde se cumple que f(a) \cdot f(b) < 0, lo que garantiza que existe al menos una raíz entre a y b.</p>
         <pre><code>import numpy as np
 import matplotlib.pyplot as plt
 
@@ -326,6 +334,7 @@ plt.show()</code></pre>
     
     <section>
         <h2>Método de Birge-Vieta</h2>
+        <p>El método de Birge-Vieta es una técnica iterativa usada para encontrar raíces reales de polinomios, especialmente cuando el grado del polinomio es alto. Se basa en una forma simplificada del método de Newton-Raphson, adaptada específicamente a polinomios, lo que evita calcular derivadas explícitamente.</p>
         <pre><code>import numpy as np
 import matplotlib.pyplot as plt
 
@@ -379,6 +388,8 @@ plt.show()
     
     <section>
         <h2>Interpolación de Newton</h2>
+        <p>La interpolación de Newton es un método para aproximar una función a partir de un conjunto de puntos conocidos, utilizando un polinomio construido con diferencias divididas. Es especialmente útil cuando se agregan nuevos puntos, ya que permite reutilizar los cálculos previos y ampliar el polinomio de forma eficiente.
+</p>
         <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 
